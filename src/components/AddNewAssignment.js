@@ -33,8 +33,7 @@ class AddNewAssignment extends Component {
       this.setState({date: event.target.value});
     }
   
-   // when submit button pressed, send updated grades to back end 
-   //  and then fetch the new grades.
+   // when submit button pressed, send new assignment data to server
    handleSubmit = ( ) => {
       console.log(".handleSubmit");
 	  const token = Cookies.get('XSRF-TOKEN');
