@@ -39,7 +39,7 @@ class AddNewAssignment extends Component {
 	  const token = Cookies.get('XSRF-TOKEN');
 	  this.courseId = parseInt(this.courseId);
 	  
-	  ///?courseId=999001&name=Super Special Assignment 2&due=2021-09-09
+	  ///?courseId=id&name=name&due=date
       fetch(`${SERVER_URL}/gradebook/?courseId=${this.state.courseId}&name=${this.state.name}&due=${this.state.date}` , 
           {  
           method: 'POST', 
