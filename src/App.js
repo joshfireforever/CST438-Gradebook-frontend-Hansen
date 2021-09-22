@@ -4,6 +4,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Gradebook from './components/Gradebook';
 import Assignment from './components/Assignment';
+import AddNewAssignment from './components/AddNewAssignment';
 import {BrowserRouter, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
        <Switch>
         <Route exact path='/' component={Assignment} />
         <Route path='/gradebook' component={Gradebook} />
+        <Route path='/newAssignment' component={AddNewAssignment} />
        </Switch>
       </BrowserRouter>
     </div>
